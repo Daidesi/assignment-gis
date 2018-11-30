@@ -1,0 +1,67 @@
+#sidebar {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right: solid 1px black;
+}
+
+#map {
+    position: fixed;
+    left: 20%;
+    top: 0;
+    width: 80%;
+    height: 100%;
+}
+
+.search_setting {
+    padding-left: 16px;
+}
+
+.lake-marker {
+    background-image: url("/static/img/map-marker.png");
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+#loader {
+    position: fixed;
+    left: 58%;
+    top: 45%;
+    z-index: 1;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    animation: spin 2s linear infinite;
+}
+
+#small_loader {
+    position: fixed;
+    left: 8.5%;
+    top: 70%;
+    z-index: 1;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#closest_lakes_table_body tr {
+    cursor: pointer;
+}
